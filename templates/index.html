@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Detector</title>
+</head>
+<body>
+
+<h1>Emotion Detection App</h1>
+
+<input type="text" id="textInput" placeholder="Enter text here">
+<button onclick="analyzeEmotion()">Analyze</button>
+
+<p id="result"></p>
+
+<script>
+function analyzeEmotion() {
+    const text = document.getElementById("textInput").value;
+
+    fetch(`/emotionDetector?textToAnalyze=${text}`)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("result").innerHTML = data;
+        });
+}
+</script>
+
+</body>
+</html>

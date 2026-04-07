@@ -1,0 +1,33 @@
+
+
+py -m venv venv
+venv\Scripts\activate
+
+pip install flask requests
+
+pip install ibm-watson
+pip install certifi
+
+py -m unittest test_emotion_detection.py
+
+pip install pylint
+
+pylint server.py
+
+
+cloude.ibm.com
+user: pranaysingh5424@gmail.com
+pass: India@260252
+
+API Key: a2XlI3FgVZb_7s51IgZ0-PdNT0hjxUw6zwg25a7PfJ60
+
+URL: https://api.au-syd.natural-language-understanding.watson.cloud.ibm.com/instances/d13164d0-232e-4d51-b2b6-a3dd9c4cf6ae
+
+NATURAL_LANGUAGE_UNDERSTANDING_APIKEY=a2XlI3FgVZb_7s51IgZ0-PdNT0hjxUw6zwg25a7PfJ60
+NATURAL_LANGUAGE_UNDERSTANDING_IAM_APIKEY=a2XlI3FgVZb_7s51IgZ0-PdNT0hjxUw6zwg25a7PfJ60
+NATURAL_LANGUAGE_UNDERSTANDING_URL=https://api.au-syd.natural-language-understanding.watson.cloud.ibm.com/instances/d13164d0-232e-4d51-b2b6-a3dd9c4cf6ae
+NATURAL_LANGUAGE_UNDERSTANDING_AUTH_TYPE=iam
+
+
+
+
